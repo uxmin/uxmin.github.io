@@ -118,11 +118,11 @@ $ git push origin master
 
 
 [1]: https://github.com/
-[2]: /assets/images/Github/github_new_repositories.png
-[3]: /assets/images/Github/github_new_repositories2.png
-[4]: /assets/images/Github/github_repositories_url.png
-[5]: /assets/images/Github/git_branch.png
+[2]: /assets/img/Github/github_new_repositories.png
+[3]: /assets/img/Github/github_new_repositories2.png
+[4]: /assets/img/Github/github_repositories_url.png
+[5]: /assets/img/Github/git_branch.png
 [6]: https://git-scm.com/docs/git-add
-[7]: /assets/images/Github/git_status.png
+[7]: /assets/img/Github/git_status.png
 [8]: https://git-scm.com/docs/git-commit
-[9]: /assets/images/Github/git_commit.png
+[9]: /assets/img/Github/git_commit.png

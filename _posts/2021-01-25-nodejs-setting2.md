@@ -269,7 +269,7 @@ MongoDB가 연결되었다는 메세지와 함께, 성공적으로 데이터가 
 ![Mongoose_Json][7]<br><br>
 
 ![Mongoose_Check][8]<br>
-_* nodejs Database 밑 users collection이 생성되고 데이터가 성공적으로 insert된 모습._<br><br>
+_* nodejs Database 밑 users collection이 생성되고 데이터가 성공적으로 insert된 모습._<br><br>`
 
 
 [1]: https://docs.mongodb.com/manual/reference/built-in-roles/

@@ -1,20 +1,20 @@
 ---
 layout: post
-title: [에러노트] Crypto AES 암호화
+title: 에러노트 - Crypto AES 암호화
 date: "2021-05-04"
 categories: Node.js AES Crypto
 ---
 React, Node를 독학하면서 기본적인 로그인 구현과 CRUD 게시판을 만들어봤다.<br>
-기본적인 뼈대를 만들어봤으니, 깊이감이 있는 프로젝트를 위해 Crypto를 이용한 암호화를 구현하기로 했는데 난관에 봉착했다...<br>
+기본적인 뼈대를 만들어봤으니, 깊이감이 있는 프로젝트를 위해 Crypto를 이용한 암호화를 구현하기로 했는데 에러 발생.<br>
 
 <br>
 
 [Crypto Documentation][1]<br>
 공식문서에 나와있는 로직을 그대로 반영했는데,<br>
-암호화, 복호화를 위해서는 동일한 key와 iv를 이용해야 한다고 해서 로직반영을 해도 복호화가 안됐나보다.<br>
-~~근데 문제는 최대한 심플하게 로직을 수정했는데도 안됨.~~<br>
+암호화, 복호화를 위해서는 동일한 key와 iv를 이용해야 한다고 해서 동일한 값을 부여했는데, 수정된 로직을 반영해도 복호화가 안된다.<br>
+~~근데 문제는 최대한 심플하게 로직을 수정했는데도 안됨. 하하.~~<br>
 
-**에러 기록해서 꼭 해결해야지.** 라는 생각으로 기록한다.<br>
+**"에러 기록해서 꼭 해결해야지."** 라는 생각으로 기록한다.<br>
 
 <br><br>
 
@@ -48,7 +48,7 @@ solvePassword += decipher.final('utf8');
 
 <br><br><br>
 
-### 3. 에러
+### 3. Hello, Error!
 
 ```bash
 Error: error:0606506D:digital envelope routines:EVP_DecryptFinal_ex:wrong final block length
@@ -61,12 +61,12 @@ Error: error:0606506D:digital envelope routines:EVP_DecryptFinal_ex:wrong final 
   code: 'ERR_OSSL_EVP_WRONG_FINAL_BLOCK_LENGTH'
 }
 ```
-<br>
+
 + base64, hex 사용해봤지만 에러코드 동일.
 + 128, 192, 256 사용해봤지만 에러코드 동일.
-<br>
+<br><br>
 
 동일한 키 사용하면 된다면서...!<br>
-...넌 언제나 정답이 있으니 내가 열심히 공부해볼게...<br><br><br>
+_...넌 언제나 정답이 있으니 내가 열심히 공부해볼게..._<br><br><br>
 
 [1]: https://nodejs.org/api/crypto.html
